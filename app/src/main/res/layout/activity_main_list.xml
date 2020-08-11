@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbarThumbHorizontal="@android:color/background_dark"
+    android:scrollbarThumbVertical="@android:color/background_dark"
+    tools:context=".MainList">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_botton"
+        android:onClick="addNew"
+        android:text="+"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/setting_Image"
+        android:layout_width="78dp"
+        android:layout_height="70dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/listView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_settings_black_24dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </ListView>
+</androidx.constraintlayout.widget.ConstraintLayout>

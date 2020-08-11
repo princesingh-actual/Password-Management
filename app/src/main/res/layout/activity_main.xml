@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@android:color/background_dark"
+tools:context=".MainActivity" >
+
+<EditText
+    android:id="@+id/userNameText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="96dp"
+    android:layout_marginLeft="96dp"
+    android:layout_marginTop="248dp"
+    android:ems="10"
+    android:hint="UserName"
+    android:inputType="textPersonName"
+    android:textColor="@android:color/holo_red_dark"
+    android:textColorHighlight="@android:color/holo_red_dark"
+    android:textColorHint="@android:color/holo_red_light"
+    android:textColorLink="@android:color/holo_red_dark"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+    android:id="@+id/passwordText_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:ems="10"
+    android:hint="Password"
+    android:inputType="textPassword"
+    android:textColor="@android:color/holo_red_dark"
+    android:textColorHighlight="@android:color/holo_red_dark"
+    android:textColorHint="@android:color/holo_red_light"
+    android:textColorLink="@android:color/holo_red_dark"
+    app:layout_constraintEnd_toEndOf="@+id/userNameText"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/userNameText"
+    app:layout_constraintTop_toBottomOf="@+id/userNameText" />
+
+<Button
+    android:id="@+id/logIn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:onClick="loginUser"
+    android:text="Login"
+    android:background="@drawable/store_botton"
+    app:layout_constraintEnd_toEndOf="@+id/passwordText_view"
+    app:layout_constraintHorizontal_bias="0.52"
+    app:layout_constraintStart_toStartOf="@+id/passwordText_view"
+    app:layout_constraintTop_toBottomOf="@+id/passwordText_view" />
+
+<Button
+    android:id="@+id/regiter"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:onClick="registerUser"
+    android:background="@drawable/store_botton"
+    android:text="Register"
+    android:visibility="invisible"
+    app:layout_constraintEnd_toEndOf="@+id/passwordText_view"
+    app:layout_constraintHorizontal_bias="0.52"
+    app:layout_constraintStart_toStartOf="@+id/passwordText_view"
+    app:layout_constraintTop_toBottomOf="@+id/passwordText_view" />
+
+<TextView
+    android:id="@+id/regId"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="16dp"
+    android:onClick="clickedReg"
+    android:text="Register"
+    android:textColor="@android:color/holo_red_dark"
+    android:textColorHighlight="@android:color/holo_red_dark"
+    android:textColorHint="@android:color/holo_red_dark"
+    android:textColorLink="@android:color/holo_red_dark"
+    android:textSize="30sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+<EditText
+    android:id="@+id/emailEdittext"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="28dp"
+    android:ems="10"
+    android:hint="Email Id"
+    android:inputType="textEmailAddress"
+    android:textColor="@android:color/holo_red_dark"
+    android:textColorHighlight="@android:color/holo_red_dark"
+    android:textColorHint="@android:color/holo_red_dark"
+    android:textColorLink="@android:color/holo_red_dark"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toTopOf="@+id/userNameText"
+    app:layout_constraintEnd_toEndOf="@+id/userNameText"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/userNameText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
